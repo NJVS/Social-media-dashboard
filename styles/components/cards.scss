@@ -1,0 +1,148 @@
+@use '../helpers' as *;
+
+.card {
+  position: relative;
+  padding: 21px;
+  height: auto;
+  background-color: var(--theme-card-background);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+
+  @include hover {
+    background-color: var(--theme-card-background-hover);
+  }
+
+  // icon
+  .card_account-icon {
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  // social media
+  @each $social, $color in deepMap($colors, social) {
+    &.card-#{$social} {
+      // set icon image
+      .card_account-icon {
+        background-image: url(../images/icon-#{$social}.svg);
+      }
+      
+      // top border for large cards 
+      &:is(.card-lg)::before {
+        background: $color;
+      }
+    }
+  }
+
+  .card_stats-subj {
+    color: var(--theme-text-muted);
+    font-size: 14px;
+  }
+  .card_stats-count {
+    color: var(--theme-text);
+    font-weight: 700;
+    line-height: 1;
+  }
+  .card_stats-fluct {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+
+    &.fluct-up {
+      color: deepMap($colors, success);
+      &::before {
+        content: url(../images/icon-up.svg);
+      }
+    }
+    &.fluct-down {
+      color: deepMap($colors, danger);
+      &::before {
+        content: url(../images/icon-down.svg);
+      }
+    }
+
+    // up/down icon
+    &::before {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 8px;
+      height: 8px;
+      margin-top: -5px;
+      margin-right: 4px;
+    }
+  }
+
+
+
+  // large card
+  &.card-lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card_stats-subj {
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 4px;
+    }
+    .card_stats-count {
+      font-size: 3rem;
+    }
+    .card_stats-fluct {
+      margin-top: 32px;
+    }
+
+    // top border
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+    }
+
+    // only available on large card
+    .card_account {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+  
+      margin: 5px 0 32px;
+  
+      .card_account-username {
+        font-size: 14px;
+        color: var(--theme-text-muted);
+        font-weight: 700;  
+      }
+    }
+  }
+
+  // small card
+  &.card-sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 26px;
+    align-items: end;
+
+
+    > *:nth-child(odd) {
+      justify-self: start;
+    }
+    > *:nth-child(even) {
+      justify-self: end;
+    }
+    .card_stats-subj {
+      text-transform: capitalize;
+      font-weight: 700;
+    }
+    .card_stats-count {
+      font-size: 1.8rem;
+    }
+  }
+}

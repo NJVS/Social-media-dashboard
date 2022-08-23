@@ -1,0 +1,37 @@
+// Fonts
+$font-style: (
+  primary: ('Inter', sans-serif)
+);
+
+// Colors
+$colors: (
+  success: #1db489,
+  danger: #dc414c,
+  social: (
+    twitter: #1ca0f2,
+    youtube: #c4032a,
+    facebook: #198ff5,
+    instagram: linear-gradient(to right, #fdc468, #df4996)
+  ),
+  themes: ( 
+    // first value in list will be the light/default and 
+    // the second value will be the dark theme
+    mode: ('light', 'dark'),
+    text: (#1e202a, #ffffff),
+    text-muted: (#63687e, #8b97c6),
+    divider: (#63687e, #63687e),
+    background: (#ffffff, #1e202a),
+    top-background: (#eceff9, #212330),
+    card-background: (#f0f2fa, #252a41),
+    card-background-hover: (#e0e4f0, #343b56),
+    switch-toggle: (#f0f2f9, #252a41),
+    switch-focus-shadow: (
+      rgba(#378fe6, 0.3),
+      rgba(#378fe6, 0.5)
+    ),
+    switch-background: (
+      linear-gradient(to right, #aeb3cb, #aeb3cb),
+      linear-gradient(to right, #378fe6, #3eda82),
+    ),
+  )
+);

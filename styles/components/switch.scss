@@ -1,0 +1,55 @@
+@use '../helpers' as *;
+
+.theme-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+  @include media-query('mobile', 'sm') {
+    padding: 0 5px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  label.switch_label {
+    color: var(--theme-text-muted);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  input[type=checkbox].switch_toggle {
+    all: unset; // remove default styles
+    cursor: pointer;
+
+    position: relative;
+    width: 50px;
+    height: 26px;
+    background: var(--theme-switch-background);
+    border-radius: 50vh;
+
+
+    // circle icon
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 95%;
+      transform: translate(-100%, -50%);
+      width: 21px;
+      height: 21px;
+      background-color: var(--theme-switch-toggle);
+      border-radius: 50%;
+    }
+
+    &:checked::after {
+      left: 5%;
+      transform: translate(0%, -50%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px var(--theme-switch-focus-shadow);
+    }
+  }  
+}

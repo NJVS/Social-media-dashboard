@@ -1,0 +1,18 @@
+@use 'sass:list';
+@use '../helpers'as *;
+
+@for $i from 1 through list.length(deepMap($colors, themes, mode)) {
+  @if nth(deepMap($colors, themes, mode), $i) == 'light' {
+    :root {
+      @each $name, $colors in deepMap($colors, themes) {
+        --theme-#{$name}: #{nth($colors, $i)};
+      }
+    }
+  } @else {
+    [data-theme=#{nth(deepMap($colors, themes, mode), $i)}] {
+      @each $name, $colors in deepMap($colors, themes) {
+        --theme-#{$name}: #{nth($colors, $i)};
+      }
+    }
+  }
+}
