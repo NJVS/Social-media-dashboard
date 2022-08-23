@@ -31,9 +31,9 @@ Users should be able to:
 
 Desktop <br>
 <img src="./design/ss_desktop_dark.png" style="width: 45%; height: auto"> <img src="./design/ss_desktop_light.png" style="width: 45%; height: auto">
-Tablet <br>
+<br> Tablet <br>
 <img src="./design/ss_tablet_dark.png" style="width: 45%; height: auto"> <img src="./design/ss_tablet_light.png" style="width: 45%; height: auto">
-Mobile <br>
+<br> Mobile <br>
 <img src="./design/ss_phone_light.png" style="width: 45%; height: auto"> <img src="./design/ss_phone_light.png" style="width: 45%; height: auto">
 
 
