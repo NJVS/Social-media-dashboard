@@ -34,8 +34,10 @@ Users should be able to:
 
 <div>
   <div style="width: 45%">
+  ![](./design/ss_desktop_dark.png)
   </div>
   <div style="width: 45%">
+  ![](./design/ss_desktop_light.png)
   </div>
 </div>
 
