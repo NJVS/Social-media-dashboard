@@ -37,19 +37,6 @@ Users should be able to:
     <img scr="./design/ss_desktop_light.png">
   </div>
 </div>
-<p align="left">
-  <img align="left" scr="./design/ss_tablet_dark.png">
-</p>
-<p align="center">
-  <img align="center" scr="./design/ss_tablet_light.png" width=400 height=auto>
-</p>
-
-<p align="left">
-  <img align="left" scr="./design/ss_mobile_dark.png">
-</p>
-<p align="center">
-  <img align="center" scr="./design/ss_mobile_light.png" width=400 height=auto>
-</p>
 
 ### Links
 
