@@ -25,21 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![](./design/ss_desktop_dark.png)![](./design/ss_desktop_light.png)
+![](./design/ss_desktop_dark.png)![](./design/ss_desktop_light.png)
 ![](./design/ss_tablet_dark.png)![](./design/ss_tablet_light.png)
-![](./design/ss_mobile_dark.png)![](./design/ss_mobile_light.png) -->
+![](./design/ss_mobile_dark.png)![](./design/ss_mobile_light.png)
 
-<img scr="./design/ss_desktop_dark.png" width=45%>
-<img scr="./design/ss_desktop_light.png" width=45%>
+<img scr="./design/ss_desktop_dark.png">
+<img scr="./design/ss_desktop_light.png">
 
-<div>
-  <div style="width: 45%">
-  ![](./design/ss_desktop_dark.png)
-  </div>
-  <div style="width: 45%">
-  ![](./design/ss_desktop_light.png)
-  </div>
-</div>
 
 ### Links
 
