@@ -29,11 +29,11 @@ Users should be able to:
 ![](./design/ss_tablet_dark.png)![](./design/ss_tablet_light.png)
 ![](./design/ss_mobile_dark.png)![](./design/ss_mobile_light.png) -->
 
-Desktop
+Desktop <br>
 <img src="./design/ss_desktop_dark.png" style="width: 45%; height: auto"> <img src="./design/ss_desktop_light.png" style="width: 45%; height: auto">
-Tablet
+Tablet <br>
 <img src="./design/ss_tablet_dark.png" style="width: 45%; height: auto"> <img src="./design/ss_tablet_light.png" style="width: 45%; height: auto">
-Mobile
+Mobile <br>
 <img src="./design/ss_phone_light.png" style="width: 45%; height: auto"> <img src="./design/ss_phone_light.png" style="width: 45%; height: auto">
 
 
