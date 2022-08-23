@@ -31,10 +31,10 @@ Users should be able to:
 
 <div>
   <div style="width: 45%">
-    <img scr="./design/ss_desktop_dark.png">
+    <img scr="./design/ss_desktop_dark.png" width="100%">
   </div>
   <div style="width: 45%">
-    <img scr="./design/ss_desktop_light.png">
+    <img scr="./design/ss_desktop_light.png" width="100%">
   </div>
 </div>
 
