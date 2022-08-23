@@ -29,13 +29,14 @@ Users should be able to:
 ![](./design/ss_tablet_dark.png)![](./design/ss_tablet_light.png)
 ![](./design/ss_mobile_dark.png)![](./design/ss_mobile_light.png) -->
 
-<p align="left">
-  <img align="left" scr="./design/ss_desktop_dark.png">
-</p>
-<p align="center">
-  <img align="center" scr="./design/ss_desktop_light.png" width=400 height=auto>
-</p>
-
+<div>
+  <div style="width: 45%">
+    <img scr="./design/ss_desktop_dark.png">
+  </div>
+  <div style="width: 45%">
+    <img scr="./design/ss_desktop_light.png">
+  </div>
+</div>
 <p align="left">
   <img align="left" scr="./design/ss_tablet_dark.png">
 </p>
