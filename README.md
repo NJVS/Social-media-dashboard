@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./desing/ss_desktop_dark.png)![](./desing/ss_desktop_light.png)
-![](./desing/ss_tablet_dark.png)![](./desing/ss_tablet_light.png)
-![](./desing/ss_mobile_dark.png)![](./desing/ss_mobile_light.png)
+![](./design/ss_desktop_dark.png)![](./design/ss_desktop_light.png)
+![](./design/ss_tablet_dark.png)![](./design/ss_tablet_light.png)
+![](./design/ss_mobile_dark.png)![](./design/ss_mobile_light.png)
 
 <!-- <p align="left">
   <img align="left" scr="./design/ss_desktop_dark.png">
